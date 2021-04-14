@@ -16,7 +16,7 @@ namespace ChatServerApp.Comunicacion
         private Socket comCliente;
         private StreamReader reader;
         private StreamWriter writer;
-        //constructur que recibe puerto
+        //constructor que recibe puerto
         public ServerSocket(int puerto)
         {
             this.puerto = puerto;
@@ -85,3 +85,4 @@ namespace ChatServerApp.Comunicacion
         }
     }
 }
+//TOODO: Una clase library que dependiendo de parametros de constructor construya un servidor o cliente socket
