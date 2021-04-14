@@ -7,7 +7,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace clienteSocketApp.Comunicacion
+namespace ClienteSocketApp.Comunicacion
 {
     public class ClienteSocket
     {
@@ -31,6 +31,7 @@ namespace clienteSocketApp.Comunicacion
                 this.comunicacionServidor.Connect(endpoint);
                 Stream stream = new NetworkStream(this.comunicacionServidor);
                 this.reader = new StreamReader(stream);
+                this.writer = new StreamWriter(stream);
                 return true;
             }catch(Exception ex)
             {
